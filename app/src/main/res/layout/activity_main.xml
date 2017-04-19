@@ -34,7 +34,7 @@
 
     <fragment
         android:id="@+id/fragment_navigation_drawer"
-        android:name="app.com.cvjuanresume.juansandoval.cvjuanresume.FragmentDrawer"
+        android:name="app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.FragmentDrawer"
         android:layout_width="@dimen/nav_drawer_width"
         android:layout_height="match_parent"
         android:layout_gravity="start"

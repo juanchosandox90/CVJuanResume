@@ -1,4 +1,4 @@
-package app.com.cvjuanresume.juansandoval.cvjuanresume;
+package app.com.cvjuanresume.juansandoval.cvjuanresume.adapters;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -9,6 +9,9 @@ import android.widget.TextView;
 
 import java.util.Collections;
 import java.util.List;
+
+import app.com.cvjuanresume.juansandoval.cvjuanresume.R;
+import app.com.cvjuanresume.juansandoval.cvjuanresume.models.NavDrawerItem;
 
 /**
  * Created by jsandoval on 18/04/17.

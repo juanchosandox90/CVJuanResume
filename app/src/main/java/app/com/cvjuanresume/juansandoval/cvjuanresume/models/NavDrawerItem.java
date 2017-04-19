@@ -1,4 +1,4 @@
-package app.com.cvjuanresume.juansandoval.cvjuanresume;
+package app.com.cvjuanresume.juansandoval.cvjuanresume.models;
 
 /**
  * Created by jsandoval on 18/04/17.

@@ -1,4 +1,4 @@
-package app.com.cvjuanresume.juansandoval.cvjuanresume;
+package app.com.cvjuanresume.juansandoval.cvjuanresume.fragments;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -17,6 +17,9 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
+import app.com.cvjuanresume.juansandoval.cvjuanresume.R;
+import app.com.cvjuanresume.juansandoval.cvjuanresume.adapters.NavigationDrawerAdapter;
+import app.com.cvjuanresume.juansandoval.cvjuanresume.models.NavDrawerItem;
 
 
 public class FragmentDrawer extends Fragment {

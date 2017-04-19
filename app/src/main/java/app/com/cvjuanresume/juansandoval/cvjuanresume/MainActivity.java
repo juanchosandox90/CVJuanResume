@@ -12,6 +12,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.FragmentDrawer;
+import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.FriendsFragment;
+import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.HomeFragment;
+import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.MessageFragment;
+
 
 public class MainActivity extends ActionBarActivity implements FragmentDrawer.FragmentDrawerListener {
 
