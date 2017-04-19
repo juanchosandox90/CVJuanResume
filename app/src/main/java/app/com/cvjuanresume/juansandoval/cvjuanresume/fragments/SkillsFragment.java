@@ -1,8 +1,8 @@
 package app.com.cvjuanresume.juansandoval.cvjuanresume.fragments;
 
 import android.app.Activity;
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,13 +10,13 @@ import android.view.ViewGroup;
 import app.com.cvjuanresume.juansandoval.cvjuanresume.R;
 
 /**
- * Created by jsandoval on 18/04/17.
+ * Created by jsandoval on 19/04/17.
  */
 
-public class MessageFragment extends Fragment {
+public class SkillsFragment extends Fragment {
 
-    public MessageFragment() {
-        // Required empty public constructor
+    public SkillsFragment(){
+
     }
 
     @Override
@@ -28,7 +28,7 @@ public class MessageFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_messages, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_skills, container, false);
 
 
         // Inflate the layout for this fragment

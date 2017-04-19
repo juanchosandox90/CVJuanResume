@@ -12,10 +12,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.AchievementsFragment;
+import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.ContactMeFragment;
 import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.FragmentDrawer;
-import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.FriendsFragment;
-import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.HomeFragment;
-import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.MessageFragment;
+import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.EducationFragment;
+import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.AboutMeFragment;
+import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.ExperienceFragment;
+import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.SkillsFragment;
+import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.SocialMediaFragment;
 
 
 public class MainActivity extends ActionBarActivity implements FragmentDrawer.FragmentDrawerListener {
@@ -65,7 +69,7 @@ public class MainActivity extends ActionBarActivity implements FragmentDrawer.Fr
         }
 
         if(id == R.id.action_search){
-            Toast.makeText(getApplicationContext(), "Search action is selected!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Opcion de Buscar seleccionada!", Toast.LENGTH_SHORT).show();
             return true;
         }
 
@@ -82,16 +86,32 @@ public class MainActivity extends ActionBarActivity implements FragmentDrawer.Fr
         String title = getString(R.string.app_name);
         switch (position) {
             case 0:
-                fragment = new HomeFragment();
-                title = getString(R.string.title_home);
+                fragment = new AboutMeFragment();
+                title = getString(R.string.title_aboutme);
                 break;
             case 1:
-                fragment = new FriendsFragment();
-                title = getString(R.string.title_friends);
+                fragment = new EducationFragment();
+                title = getString(R.string.title_education);
                 break;
             case 2:
-                fragment = new MessageFragment();
-                title = getString(R.string.title_messages);
+                fragment = new ExperienceFragment();
+                title = getString(R.string.title_experience);
+                break;
+            case 3:
+                fragment = new AchievementsFragment();
+                title = getString(R.string.title_achievements);
+                break;
+            case 4:
+                fragment = new SkillsFragment();
+                title = getString(R.string.title_skills);
+                break;
+            case 5:
+                fragment = new SocialMediaFragment();
+                title = getString(R.string.title_socialmedia);
+                break;
+            case 6:
+                fragment = new ContactMeFragment();
+                title = getString(R.string.title_contactme);
                 break;
             default:
                 break;

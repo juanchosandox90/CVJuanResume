@@ -5,20 +5,40 @@
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
 
-    <string name="nav_item_home">Home</string>
-    <string name="nav_item_friends">Friends</string>
-    <string name="nav_item_notifications">Messages</string>
+    <string name="nav_item_aboutme">About Me</string>
+    <string name="nav_item_education">Education</string>
+    <string name="nav_item_experience">Experience</string>
+    <string name="nav_item_achievements">Achievements</string>
+    <string name="nav_item_skills">Skills</string>
+    <string name="nav_item_socialmedia">Social Media</string>
+    <string name="nav_item_contacme">Contact Me</string>
+
+    <string name="fragment_title_aboutme">ABOUT ME</string>
+    <string name="fragment_title_education">EDUCATION</string>
+    <string name="fragment_title_experience">EXPERIENCE</string>
+    <string name="fragment_title_achievements">ACHIEVEMENTS</string>
+    <string name="fragment_title_skills">SKILLS</string>
+    <string name="fragment_title_socialmedia">SOCIAL MEDIA</string>
+    <string name="fragment_title_contactme">CONTACT ME</string>
 
     <!-- navigation drawer item labels  -->
     <string-array name="nav_drawer_labels">
-        <item>@string/nav_item_home</item>
-        <item>@string/nav_item_friends</item>
-        <item>@string/nav_item_notifications</item>
+        <item>@string/nav_item_aboutme</item>
+        <item>@string/nav_item_education</item>
+        <item>@string/nav_item_experience</item>
+        <item>@string/nav_item_achievements</item>
+        <item>@string/nav_item_skills</item>
+        <item>@string/nav_item_socialmedia</item>
+        <item>@string/nav_item_contacme</item>
     </string-array>
 
-    <string name="title_messages">Messages</string>
-    <string name="title_friends">Friends</string>
-    <string name="title_home">Home</string>
+    <string name="title_experience">Experience</string>
+    <string name="title_education">Education</string>
+    <string name="title_aboutme">About Me</string>
+    <string name="title_achievements">Achievements</string>
+    <string name="title_skills">Skills</string>
+    <string name="title_socialmedia">Social Media</string>
+    <string name="title_contactme">Contact Me</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
