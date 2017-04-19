@@ -1,6 +1,9 @@
 package app.com.cvjuanresume.juansandoval.cvjuanresume;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -12,12 +15,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.AboutMeFragment;
 import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.AchievementsFragment;
 import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.ContactMeFragment;
-import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.FragmentDrawer;
 import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.EducationFragment;
-import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.AboutMeFragment;
 import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.ExperienceFragment;
+import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.FragmentDrawer;
 import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.SkillsFragment;
 import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.SocialMediaFragment;
 
@@ -46,6 +49,31 @@ public class MainActivity extends ActionBarActivity implements FragmentDrawer.Fr
 
         // display the first navigation drawer view on app launch
         displayView(0);
+
+        Thread t = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                //  Initialize SharedPreferences
+                SharedPreferences getPrefs = PreferenceManager
+                        .getDefaultSharedPreferences(getBaseContext());
+                //  Create a new boolean and preference and set it to true
+                boolean isFirstStart = getPrefs.getBoolean("firstStart", true);
+                //  If the activity has never started before...
+                if (isFirstStart) {
+                    //  Launch app intro
+                    Intent i = new Intent(MainActivity.this, WalkThroughActivity.class);
+                    startActivity(i);
+                    //  Make a new preferences editor
+                    SharedPreferences.Editor e = getPrefs.edit();
+                    //  Edit preference to make it false because we don't want this to run again
+                    e.putBoolean("firstStart", false);
+                    //  Apply changes
+                    e.apply();
+                }
+            }
+        });
+        // Start the thread
+        t.start();
     }
 
 
@@ -68,7 +96,7 @@ public class MainActivity extends ActionBarActivity implements FragmentDrawer.Fr
             return true;
         }
 
-        if(id == R.id.action_search){
+        if (id == R.id.action_search) {
             Toast.makeText(getApplicationContext(), "Opcion de Buscar seleccionada!", Toast.LENGTH_SHORT).show();
             return true;
         }

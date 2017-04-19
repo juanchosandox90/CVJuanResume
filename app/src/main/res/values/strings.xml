@@ -4,6 +4,9 @@
     <string name="action_search">Search</string>
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
+    <string name="accept">Accept</string>
+    <string name="skip_walk">Skip</string>
+    <string name="done_walk">Start</string>
 
     <string name="nav_item_aboutme">About Me</string>
     <string name="nav_item_education">Education</string>
@@ -20,6 +23,13 @@
     <string name="fragment_title_skills">SKILLS</string>
     <string name="fragment_title_socialmedia">SOCIAL MEDIA</string>
     <string name="fragment_title_contactme">CONTACT ME</string>
+
+    <string name="title_walk_01">Roboto Regular</string>
+    <string name="walk_01">Robot Light</string>
+    <string name="txtWalktroughFooter">Rotobo Thin</string>
+    <string name="font_roboto_thin">fonts/Roboto-Thin.ttf</string>
+    <string name="font_roboto_light">fonts/Roboto-Light.ttf</string>
+    <string name="font_roboto_regular">fonts/Roboto-Regular.ttf</string>
 
     <!-- navigation drawer item labels  -->
     <string-array name="nav_drawer_labels">
