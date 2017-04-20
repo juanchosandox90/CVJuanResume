@@ -2,9 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:clickable="true">
 
-    <TextView
+    <app.com.cvjuanresume.juansandoval.cvjuanresume.utils.CustomizedTextView
         android:id="@+id/title"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -12,6 +13,6 @@
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:textSize="15dp"
-        android:textStyle="bold"/>
+        app:font="@string/font_roboto_light"/>
 
 </RelativeLayout>

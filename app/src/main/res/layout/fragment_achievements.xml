@@ -2,17 +2,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".fragments.AboutMeFragment">
 
 
-    <TextView
+    <app.com.cvjuanresume.juansandoval.cvjuanresume.utils.CustomizedTextView
         android:id="@+id/label"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="50dp"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
+        app:font="@string/font_roboto_regular"
         android:textSize="45dp"
         android:text="@string/fragment_title_achievements"
         android:textStyle="bold"/>
