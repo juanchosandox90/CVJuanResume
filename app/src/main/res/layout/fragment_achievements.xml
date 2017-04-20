@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         app:font="@string/font_roboto_regular"
-        android:textSize="45dp"
+        android:textSize="45sp"
         android:text="@string/fragment_title_achievements"
         android:textStyle="bold"/>
 

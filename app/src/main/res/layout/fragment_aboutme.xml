@@ -14,7 +14,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:textSize="45dp"
+        android:textSize="45sp"
         app:font="@string/font_roboto_regular"
         android:text="@string/fragment_title_aboutme"
         android:textStyle="bold"/>
