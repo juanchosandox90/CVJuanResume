@@ -15,6 +15,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import java.util.HashMap;
+
 import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.AboutMeFragment;
 import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.AchievementsFragment;
 import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.ContactMeFragment;
@@ -23,6 +25,8 @@ import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.ExperienceFragme
 import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.FragmentDrawer;
 import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.SkillsFragment;
 import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.SocialMediaFragment;
+import app.com.cvjuanresume.juansandoval.cvjuanresume.utils.SQLiteHandler;
+import app.com.cvjuanresume.juansandoval.cvjuanresume.utils.SessionManager;
 
 
 public class MainActivity extends ActionBarActivity implements FragmentDrawer.FragmentDrawerListener {
@@ -31,11 +35,24 @@ public class MainActivity extends ActionBarActivity implements FragmentDrawer.Fr
 
     private Toolbar mToolbar;
     private FragmentDrawer drawerFragment;
+    private SQLiteHandler db;
+    private SessionManager session;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // SqLite database handler
+        db = new SQLiteHandler(getApplicationContext());
+
+        // session manager
+        session = new SessionManager(getApplicationContext());
+        HashMap<String, String> user = db.getUserDetails();
+
+        if (!session.isLoggedIn()) {
+            logoutUser();
+        }
 
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
 
@@ -93,6 +110,7 @@ public class MainActivity extends ActionBarActivity implements FragmentDrawer.Fr
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            logoutUser();
             return true;
         }
 
@@ -154,5 +172,14 @@ public class MainActivity extends ActionBarActivity implements FragmentDrawer.Fr
             // set the toolbar title
             getSupportActionBar().setTitle(title);
         }
+    }
+
+    public void logoutUser() {
+        session.setLogin(false);
+        db.deleteUsers();
+        // Launching the login activity
+        Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+        finish();
+        startActivity(intent);
     }
 }
