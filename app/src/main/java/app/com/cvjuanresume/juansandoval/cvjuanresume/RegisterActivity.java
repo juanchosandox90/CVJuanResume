@@ -115,7 +115,7 @@ public class RegisterActivity extends Activity {
         showDialog();
 
         StringRequest strReq = new StringRequest(Method.POST,
-                AppConfig.URL_REGISTER, new Response.Listener<String>() {
+                AppConfig.URL_WEB_REGISTER, new Response.Listener<String>() {
 
             @Override
             public void onResponse(String response) {
