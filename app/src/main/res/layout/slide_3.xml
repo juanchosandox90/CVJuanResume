@@ -30,7 +30,7 @@
         <app.com.cvjuanresume.juansandoval.cvjuanresume.utils.CustomizedTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/title_slide1"
+            android:text="@string/title_slide3"
             android:textColor="@color/colorPrimary"
             android:textAlignment="center"
             android:textSize="22sp"
@@ -42,7 +42,7 @@
         <app.com.cvjuanresume.juansandoval.cvjuanresume.utils.CustomizedTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/content_slide1"
+            android:text="@string/content_slide3"
             android:textColor="@color/colorPrimary"
             android:textAlignment="center"
             android:layout_marginTop="10dp"
@@ -55,7 +55,7 @@
         <app.com.cvjuanresume.juansandoval.cvjuanresume.utils.CustomizedTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/copyright_slide1"
+            android:text="@string/copyright_slide3"
             android:textColor="@color/colorPrimary"
             android:textAlignment="center"
             android:textSize="12sp"

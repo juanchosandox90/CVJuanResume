@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">CV Juan Sandoval</string>
+    <string name="action_settings">Logout</string>
+    <string name="action_search">Buscar</string>
+    <string name="drawer_open">Abrir</string>
+    <string name="drawer_close">Cerrar</string>
+    <string name="accept">Aceptar</string>
+    <string name="skip_walk">Saltar</string>
+    <string name="done_walk">Iniciar</string>
+
+    <string name="nav_item_aboutme">Acerca de Mi</string>
+    <string name="nav_item_education">Educación</string>
+    <string name="nav_item_experience">Experiencia</string>
+    <string name="nav_item_achievements">Logros</string>
+    <string name="nav_item_skills">Habilidades</string>
+    <string name="nav_item_socialmedia">Social Media</string>
+    <string name="nav_item_contacme">Contacto</string>
+
+    <string name="fragment_title_aboutme">ACERCA DE MI</string>
+    <string name="fragment_title_education">EDUCACIÓN</string>
+    <string name="fragment_title_experience">EXPERIENCIA</string>
+    <string name="fragment_title_achievements">LOGROS</string>
+    <string name="fragment_title_skills">HABILIDADES</string>
+    <string name="fragment_title_socialmedia">SOCIAL MEDIA</string>
+    <string name="fragment_title_contactme">CONTACTO</string>
+
+    <string name="title_walk_01">Roboto Regular</string>
+    <string name="walk_01">Robot Light</string>
+    <string name="txtWalktroughFooter">Rotobo Thin</string>
+    <string name="font_roboto_thin">fonts/Roboto-Thin.ttf</string>
+    <string name="font_roboto_light">fonts/Roboto-Light.ttf</string>
+    <string name="font_roboto_regular">fonts/Roboto-Regular.ttf</string>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_aboutme</item>
+        <item>@string/nav_item_education</item>
+        <item>@string/nav_item_experience</item>
+        <item>@string/nav_item_achievements</item>
+        <item>@string/nav_item_skills</item>
+        <item>@string/nav_item_socialmedia</item>
+        <item>@string/nav_item_contacme</item>
+    </string-array>
+
+    <string name="title_experience">Experiencia</string>
+    <string name="title_education">Educación</string>
+    <string name="title_aboutme">Acerca de Mi</string>
+    <string name="title_achievements">Logros</string>
+    <string name="title_skills">Habilidades</string>
+    <string name="title_socialmedia">Social Media</string>
+    <string name="title_contactme">Contacto</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Contraseá</string>
+    <string name="hint_name">Nombre</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTRO</string>
+    <string name="btn_link_to_register">No tienes cuenta? Registrate ahora.</string>
+    <string name="btn_link_to_login">Ya estas registrado! Ingresa ahora.</string>
+
+    <string name="title_slide1">Bienvenido a CVResumen</string>
+    <string name="content_slide1">En esta aplicación encontraras información de interes sobre mi vida profesional</string>
+    <string name="copyright_slide1">Copyright &#169; Juan Sandoval</string>
+
+    <string name="title_slide2">El primer paso es registrarse</string>
+    <string name="content_slide2">Para poder acceder a mi información profesional, debes registrarte primero.</string>
+    <string name="copyright_slide2">Copyright &#169; Juan Sandoval</string>
+
+    <string name="title_slide3">Logueate en la aplicación</string>
+    <string name="content_slide3">Logueate en la aplicación y accede a toda mi información profesional</string>
+    <string name="copyright_slide3">Copyright &#169; Juan Sandoval</string>
+
+
+    <string name="title_slide4">Recorre la aplicación</string>
+    <string name="content_slide4">Podras navegar por los distintos bloques de interes de mi información profesional</string>
+    <string name="copyright_slide4">Copyright &#169; Juan Sandoval</string>
+
+</resources>
