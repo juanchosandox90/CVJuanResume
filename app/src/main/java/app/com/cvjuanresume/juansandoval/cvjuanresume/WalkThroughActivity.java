@@ -23,6 +23,9 @@ public class WalkThroughActivity extends AppIntro {
 
         super.onCreate(savedInstanceState);
         addSlide(SampleSlide.newInstance(R.layout.slide_1));
+        addSlide(SampleSlide.newInstance(R.layout.slide_2));
+        addSlide(SampleSlide.newInstance(R.layout.slide_3));
+        addSlide(SampleSlide.newInstance(R.layout.slide_4));
         setSkipText(getString(R.string.skip_walk));
         setDoneText(getString(R.string.done_walk));
         getWindow().setBackgroundDrawable(null);

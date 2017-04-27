@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CV Juan Sandoval</string>
+    <string name="app_name">Best Resume CV</string>
     <string name="action_settings">Logout</string>
     <string name="action_search">Buscar</string>
     <string name="drawer_open">Abrir</string>
@@ -55,12 +55,12 @@
 
 
     <string name="hint_email">Email</string>
-    <string name="hint_password">Contraseá</string>
+    <string name="hint_password">Contraseña</string>
     <string name="hint_name">Nombre</string>
     <string name="btn_login">LOGIN</string>
     <string name="btn_register">REGISTRO</string>
-    <string name="btn_link_to_register">No tienes cuenta? Registrate ahora.</string>
-    <string name="btn_link_to_login">Ya estas registrado! Ingresa ahora.</string>
+    <string name="btn_link_to_register">¿No tienes cuenta? Registrate ahora.</string>
+    <string name="btn_link_to_login">¿Ya estas registrado? Ingresa ahora.</string>
 
     <string name="title_slide1">Bienvenido a CVResumen</string>
     <string name="content_slide1">En esta aplicación encontraras información de interes sobre mi vida profesional</string>
