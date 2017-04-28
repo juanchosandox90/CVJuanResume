@@ -67,7 +67,7 @@
     <string name="btn_register">REGISTER</string>
     <string name="btn_link_to_register">Not a member? Sign up now.</string>
     <string name="btn_link_to_login">Already registred! Login Me.</string>
-    
+
     <string name="title_slide1">Welcome a CVResumen</string>
     <string name="content_slide1">In this App you will find some information about my profesional life</string>
     <string name="copyright_slide1">Copyright &#169; Juan Sandoval</string>
@@ -83,4 +83,8 @@
     <string name="title_slide4">Walkthrough the app</string>
     <string name="content_slide4">You will able to navigate through my profesional information</string>
     <string name="copyright_slide4">Copyright &#169; Juan Sandoval</string>
+
+    <!--CONTENT ABOUT ME-->
+    <string name="aboutme_content">I think I have a great capacity for work, integration, flexibility dynamism and ability to cope with challenging situations and overcome.</string>
+    <string name="aboutme_content2">I love studying and I am self-taught by nature; I put special attention to details. Quickly I learn new ideas and concepts and I like to develop creative and innovative solutions.</string>
 </resources>

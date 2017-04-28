@@ -87,4 +87,8 @@
     <string name="content_slide4">Podras navegar por los distintos bloques de interes de mi información profesional</string>
     <string name="copyright_slide4">Copyright &#169; Juan Sandoval</string>
 
+    <!--CONTENT ABOUT ME-->
+    <string name="aboutme_content">Tengo una gran capacidad para el trabajo en equipo, integración, dinamismo, flexibilidad y resolución de situaciones desafiantes a nivel profesional.</string>
+    <string name="aboutme_content2">Amo el estudio y soy autodidacta por naturaleza; Coloco especial atención a los detalles. Rápidamente aprendo nuevas ideas y conceptos y me gusta desarrollar soluciones creativas e innovadoras.</string>
+
 </resources>
