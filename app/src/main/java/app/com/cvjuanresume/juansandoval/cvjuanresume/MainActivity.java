@@ -171,9 +171,9 @@ public class MainActivity extends ActionBarActivity implements FragmentDrawer.Fr
     public void logoutUser() {
         session.setLogin(false);
         db.deleteUsers();
-        // Launching the login activity
         Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-        finish();
         startActivity(intent);
+        finish();
+
     }
 }
