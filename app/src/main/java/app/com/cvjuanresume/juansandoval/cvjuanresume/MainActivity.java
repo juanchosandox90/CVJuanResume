@@ -13,7 +13,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
 import java.util.HashMap;
 
@@ -111,11 +110,6 @@ public class MainActivity extends ActionBarActivity implements FragmentDrawer.Fr
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             logoutUser();
-            return true;
-        }
-
-        if (id == R.id.action_search) {
-            Toast.makeText(getApplicationContext(), "Opcion de Buscar seleccionada!", Toast.LENGTH_SHORT).show();
             return true;
         }
 
