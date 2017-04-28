@@ -91,4 +91,21 @@
     <string name="aboutme_content">Tengo una gran capacidad para el trabajo en equipo, integración, dinamismo, flexibilidad y resolución de situaciones desafiantes a nivel profesional.</string>
     <string name="aboutme_content2">Amo el estudio y soy autodidacta por naturaleza; Coloco especial atención a los detalles. Rápidamente aprendo nuevas ideas y conceptos y me gusta desarrollar soluciones creativas e innovadoras.</string>
 
+    <!--CONTENT EDUCATION-->
+    <string name="title_1">Ingeniero Multimedia</string>
+    <string name="year_1">2008-2013</string>
+    <string name="college_1">Universidad Militar Nueva Granada</string>
+    <string name="contentinfo_1">Ingeniero Multimedia con enfasis en desarrollo y programación de aplicaciones móviles en Android.</string>
+
+    <string name="title_2">Diseño de Entornos Virtuales</string>
+    <string name="year_2">2013-2014</string>
+    <string name="college_2">Universidad Militar Nueva Granada</string>
+    <string name="contentinfo_2">Diseño de entornos virtuales para el aprendizaje. Desarrollo de modulos para plataformas de aprendizaje e-Learning</string>
+
+    <string name="title_3">Especialización en Gerencia de Proyectos</string>
+    <string name="year_3">2016-Actualmentet</string>
+    <string name="college_3">Universidad EAN</string>
+    <string name="contentinfo_3">Especialización en Gerencia de Proyectos</string>
+
+
 </resources>

@@ -87,4 +87,22 @@
     <!--CONTENT ABOUT ME-->
     <string name="aboutme_content">I think I have a great capacity for work, integration, flexibility dynamism and ability to cope with challenging situations and overcome.</string>
     <string name="aboutme_content2">I love studying and I am self-taught by nature; I put special attention to details. Quickly I learn new ideas and concepts and I like to develop creative and innovative solutions.</string>
+
+    <!--CONTENT EDUCATION-->
+    <string name="title_1">Multimedia Engineer</string>
+    <string name="year_1">2008-2013</string>
+    <string name="college_1">Universidad Militar Nueva Granada</string>
+    <string name="contentinfo_1">Multimedia Engineering degree with emphasis on development and programming of mobile applications and project management.</string>
+
+    <string name="title_2">Virtual Learning Environments</string>
+    <string name="year_2">2013-2014</string>
+    <string name="college_2">Universidad Militar Nueva Granada</string>
+    <string name="contentinfo_2">Design of virtual learning environments. Development of frameworks for learning platforms and content</string>
+
+    <string name="title_3">Management Projects Specialization</string>
+    <string name="year_3">2016-Current</string>
+    <string name="college_3">EAN University</string>
+    <string name="contentinfo_3">Project Management specialization</string>
+
+
 </resources>
