@@ -13,9 +13,17 @@ import android.widget.VideoView;
  * Created by jsandoval on 19/04/17.
  */
 
+/**
+ * Activity that loads the VIDEO_INTRO of the App
+ * This is the launch activity, that means this activity controls
+ * the state of the walkthrough. With a Boolean flag i know if this
+ * the first time the user is installing the app to show him
+ * the Walkthrough tutorial of the app.
+ */
+
 public class SplashScreenActivity extends Activity {
 
-    private static final String VIDEO_INTRO = "android.resource://app.com.cvjuanresume.juansandoval.cvjuanresume/raw/intro";
+    private static final String VIDEO_INTRO = "android.resource://app.com.cvjuanresume.juansandoval.cvjuanresume/raw/intro_nuevo";
     private VideoView videoView;
 
     @Override

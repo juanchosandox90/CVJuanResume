@@ -83,7 +83,7 @@ public class LoginActivity extends Activity {
                 } else {
                     // Prompt user to enter credentials
                     Toast.makeText(getApplicationContext(),
-                            "Please enter the credentials!", Toast.LENGTH_LONG)
+                            R.string.login_details, Toast.LENGTH_LONG)
                             .show();
                 }
             }
@@ -110,7 +110,7 @@ public class LoginActivity extends Activity {
         // Tag used to cancel the request
         String tag_string_req = "req_login";
 
-        pDialog.setMessage("Logging in ...");
+        pDialog.setMessage(getString(R.string.loggin));
         showDialog();
 
         StringRequest strReq = new StringRequest(Method.POST,

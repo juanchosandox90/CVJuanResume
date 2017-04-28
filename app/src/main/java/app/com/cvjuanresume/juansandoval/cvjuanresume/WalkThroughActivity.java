@@ -14,6 +14,11 @@ import app.com.cvjuanresume.juansandoval.cvjuanresume.utils.SampleSlide;
  * Created by jsandoval on 19/04/17.
  */
 
+/**
+ * This class controls the adds of the slides for the
+ * walkthrough tutorial
+ */
+
 public class WalkThroughActivity extends AppIntro {
 
     private CustomizedTextView title, textinfo, powered;

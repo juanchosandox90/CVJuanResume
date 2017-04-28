@@ -62,6 +62,14 @@
     <string name="btn_link_to_register">¿No tienes cuenta? Registrate ahora.</string>
     <string name="btn_link_to_login">¿Ya estas registrado? Ingresa ahora.</string>
 
+
+    <string name="succesfull_register">Usuario registrado exitosamente. Intenta loguearte!</string>
+    <string name="registering">Registrando ... </string>
+    <string name="register_details">Por favor ingresa tus datos!</string>
+    <string name="login_details">Por favor ingresa tu usuario y contraseña!</string>
+    <string name="loggin">Ingresando ... </string>
+
+
     <string name="title_slide1">Bienvenido a CVResumen</string>
     <string name="content_slide1">En esta aplicación encontraras información de interes sobre mi vida profesional</string>
     <string name="copyright_slide1">Copyright &#169; Juan Sandoval</string>
