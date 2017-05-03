@@ -104,5 +104,11 @@
     <string name="college_3">EAN University</string>
     <string name="contentinfo_3">Project Management specialization</string>
 
+    <string name="skill_java">JAVA</string>
+    <string name="skill_android">ANDROID STUDIO</string>
+    <string name="skill_javascript">JAVASCRIPT</string>
+    <string name="HTLMCSS">HTML/CSS</string>
+    <string name="based_on">Based on %100</string>
+
 
 </resources>

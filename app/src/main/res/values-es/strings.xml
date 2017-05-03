@@ -107,5 +107,11 @@
     <string name="college_3">Universidad EAN</string>
     <string name="contentinfo_3">Especialización en Gerencia de Proyectos</string>
 
+    <string name="skill_java">JAVA</string>
+    <string name="skill_android">ANDROID STUDIO</string>
+    <string name="skill_javascript">JAVASCRIPT</string>
+    <string name="HTLMCSS">HTML/CSS</string>
+    <string name="based_on">Basado en %100</string>
+
 
 </resources>
