@@ -88,6 +88,7 @@
     <string name="copyright_slide4">Copyright &#169; Juan Sandoval</string>
 
     <!--CONTENT ABOUT ME-->
+    <string name="aboutme_content0">Mi nombre es Juan Camilo Sandoval Devia. Soy Ingeniero Multimedia</string>
     <string name="aboutme_content">Tengo una gran capacidad para el trabajo en equipo, integración, dinamismo, flexibilidad y resolución de situaciones desafiantes a nivel profesional.</string>
     <string name="aboutme_content2">Amo el estudio y soy autodidacta por naturaleza; Coloco especial atención a los detalles. Rápidamente aprendo nuevas ideas y conceptos y me gusta desarrollar soluciones creativas e innovadoras.</string>
 
@@ -103,7 +104,7 @@
     <string name="contentinfo_2">Diseño de entornos virtuales para el aprendizaje. Desarrollo de modulos para plataformas de aprendizaje e-Learning</string>
 
     <string name="title_3">Especialización en Gerencia de Proyectos</string>
-    <string name="year_3">2016-Actualmentet</string>
+    <string name="year_3">2016-Actualmente</string>
     <string name="college_3">Universidad EAN</string>
     <string name="contentinfo_3">Especialización en Gerencia de Proyectos</string>
 

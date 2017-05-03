@@ -30,6 +30,18 @@
         android:orientation="vertical">
 
         <app.com.cvjuanresume.juansandoval.cvjuanresume.utils.CustomizedTextView
+            android:id="@+id/aboutme_content"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/aboutme_content0"
+            android:textSize="16sp"
+            app:font="@string/font_roboto_light"/>
+
+        <app.com.cvjuanresume.juansandoval.cvjuanresume.utils.CustomizedTextView
             android:id="@+id/aboutme_content1"
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
@@ -38,7 +50,7 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:text="@string/aboutme_content"
-            android:textSize="20sp"
+            android:textSize="16sp"
             app:font="@string/font_roboto_light" />
 
         <app.com.cvjuanresume.juansandoval.cvjuanresume.utils.CustomizedTextView
@@ -50,7 +62,7 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:text="@string/aboutme_content2"
-            android:textSize="20sp"
+            android:textSize="16sp"
             app:font="@string/font_roboto_light" />
 
 
