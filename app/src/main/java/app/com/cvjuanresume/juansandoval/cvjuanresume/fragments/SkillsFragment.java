@@ -67,12 +67,8 @@ public class SkillsFragment extends Fragment implements OnChartValueSelectedList
 
 
         pieChart = (PieChart) rootView.findViewById(R.id.idPieChart);
-        //pieChart.setDescription(getString(R.id.idPieChart));
         pieChart.getDescription().setEnabled(false);
         pieChart.setRotationEnabled(true);
-        //pieChart.setUsePercentValues(true);
-        //pieChart.setHoleColor(Color.BLUE);
-        //pieChart.setCenterTextColor(Color.BLACK);
         pieChart.setHoleRadius(25f);
         pieChart.setTransparentCircleAlpha(0);
         pieChart.setCenterText(getString(R.string.title_skills));
@@ -120,10 +116,8 @@ public class SkillsFragment extends Fragment implements OnChartValueSelectedList
 
         //add colors to dataset
         ArrayList<Integer> colors = new ArrayList<>();
-        //colors.add(Color.MAGENTA);
-        //colors.add(Color.GREEN);
-        //colors.add(Color.CYAN);
-        //colors.add(Color.YELLOW);
+
+
         for (int c : ColorTemplate.VORDIPLOM_COLORS)
             colors.add(c);
         for (int c : ColorTemplate.JOYFUL_COLORS)
@@ -182,7 +176,6 @@ public class SkillsFragment extends Fragment implements OnChartValueSelectedList
             MyToast.makeText(c, getString(R.string.HTLMCSS)+" "+e.getY() + "%" + " " + getString(R.string.based_on), Toast.LENGTH_LONG).show();
         }
 
-        //Toast.makeText(c, h.toString(), Toast.LENGTH_LONG).show();
     }
 
     @Override
