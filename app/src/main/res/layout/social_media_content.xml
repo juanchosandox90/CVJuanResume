@@ -25,7 +25,7 @@
                 android:scaleType="fitXY" />
 
             <TextView
-                android:id="@+id/title"
+                android:id="@+id/title_social"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/thumbnail"
@@ -36,7 +36,7 @@
                 android:textSize="@dimen/album_title" />
 
             <TextView
-                android:id="@+id/count"
+                android:id="@+id/count_social"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/title"

@@ -114,5 +114,12 @@
     <string name="HTLMCSS">HTML/CSS</string>
     <string name="based_on">Basado en %100</string>
 
+    <string name="goto_social_facebook">Ir a Facebook</string>
+    <string name="goto_social_linkedin">Ir a Linkedin</string>
+    <string name="goto_social_youtube">Ir a Youtube</string>
+
+    <string name="facebook_media">Facebook</string>
+    <string name="linkedin_media">Linkedin</string>
+    <string name="youtube_media">Youtube</string>
 
 </resources>
