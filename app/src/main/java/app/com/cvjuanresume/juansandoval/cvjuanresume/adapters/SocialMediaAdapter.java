@@ -1,5 +1,6 @@
 package app.com.cvjuanresume.juansandoval.cvjuanresume.adapters;
 
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -15,6 +16,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.linkedin.platform.DeepLinkHelper;
+import com.linkedin.platform.errors.LIDeepLinkError;
+import com.linkedin.platform.listeners.DeepLinkListener;
 
 import java.util.List;
 
@@ -99,16 +103,10 @@ public class SocialMediaAdapter extends RecyclerView.Adapter<SocialMediaAdapter.
                     mContext.startActivity(facebookIntent);
                     return true;
                 case R.id.action_add_linkedin:
-                    Intent LinkedinIntent = new Intent(Intent.ACTION_VIEW);
-                    String LinkedinUrl = getFacebookPageURL(mContext);
-                    LinkedinIntent.setData(Uri.parse(LinkedinUrl));
-                    mContext.startActivity(LinkedinIntent);
+                    getLinkedinAccount(mContext);
                     return true;
                 case R.id.action_add_youtube:
-                    Intent YoutubeIntent = new Intent(Intent.ACTION_VIEW);
-                    String youtubenUrl = getFacebookPageURL(mContext);
-                    YoutubeIntent.setData(Uri.parse(youtubenUrl));
-                    mContext.startActivity(YoutubeIntent);
+                    getYoutubeChannel();
                     return true;
                 default:
             }
@@ -135,6 +133,39 @@ public class SocialMediaAdapter extends RecyclerView.Adapter<SocialMediaAdapter.
             }
         } catch (PackageManager.NameNotFoundException e) {
             return FACEBOOK_URL;
+        }
+    }
+
+    public String getLinkedinAccount(Context context){
+        String targetID = "juan-sandoval-a33955a5";
+        DeepLinkHelper deepLinkHelper = DeepLinkHelper.getInstance();
+        deepLinkHelper.openOtherProfile(context, targetID, new DeepLinkListener() {
+            @Override
+            public void onDeepLinkSuccess() {
+                Intent LinkedinIntent = new Intent(Intent.ACTION_VIEW);
+                mContext.startActivity(LinkedinIntent);
+            }
+
+            @Override
+            public void onDeepLinkError(LIDeepLinkError error) {
+
+            }
+        });
+        return targetID;
+    }
+
+    public void getYoutubeChannel(){
+        String url = "https://www.youtube.com/channel/UCuEi9WK2ZEyFe3xUnwhFmwA";
+        Intent intent;
+        try {
+            intent =new Intent(Intent.ACTION_VIEW);
+            intent.setPackage("com.google.android.youtube");
+            intent.setData(Uri.parse(url));
+            mContext.startActivity(intent);
+        }catch (ActivityNotFoundException e) {
+            intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse(url));
+            mContext.startActivity(intent);
         }
     }
 }

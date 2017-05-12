@@ -1,4 +1,19 @@
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+}
+
+
 apply plugin: 'com.android.application'
+
 
 android {
     compileSdkVersion 25
@@ -13,14 +28,18 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
 }
 
+configurations {
+}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile files('libs/volley.jar')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
