@@ -27,6 +27,9 @@ import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.SocialMediaFragm
 import app.com.cvjuanresume.juansandoval.cvjuanresume.utils.SQLiteHandler;
 import app.com.cvjuanresume.juansandoval.cvjuanresume.utils.SessionManager;
 
+/**
+ * Created by jsandoval on 18/04/17.
+ */
 
 public class MainActivity extends ActionBarActivity implements FragmentDrawer.FragmentDrawerListener {
 

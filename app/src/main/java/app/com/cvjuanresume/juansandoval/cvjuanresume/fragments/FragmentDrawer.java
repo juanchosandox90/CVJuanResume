@@ -22,6 +22,10 @@ import app.com.cvjuanresume.juansandoval.cvjuanresume.adapters.NavigationDrawerA
 import app.com.cvjuanresume.juansandoval.cvjuanresume.models.NavDrawerItem;
 
 
+/**
+ * Created by jsandoval on 18/04/17.
+ */
+
 public class FragmentDrawer extends Fragment {
 
     private static String TAG = FragmentDrawer.class.getSimpleName();
