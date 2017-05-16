@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:clickable="true"
     android:focusable="true"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    android:paddingTop="10dp"
-    android:paddingBottom="10dp"
-    android:clickable="true"
-    android:background="?android:attr/selectableItemBackground"
-    android:orientation="vertical">
+    android:paddingTop="10dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,8 +24,9 @@
 
             <app.com.cvjuanresume.juansandoval.cvjuanresume.utils.CustomizedTextView
                 android:id="@+id/title_company"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
                 android:textColor="@color/colorPrimary"
                 android:textSize="26sp"
                 android:textStyle="bold"
@@ -33,34 +34,41 @@
 
             <ImageView
                 android:id="@+id/image_company"
-                android:layout_width="wrap_content"
+                android:layout_width="105dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/youtubecover" />
 
         </LinearLayout>
 
-        <app.com.cvjuanresume.juansandoval.cvjuanresume.utils.CustomizedTextView
-            android:id="@+id/yearcompany"
-            android:textSize="20sp"
-            app:font="@string/font_roboto_regular"
-            android:textStyle="bold"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-        <app.com.cvjuanresume.juansandoval.cvjuanresume.utils.CustomizedTextView
-            android:id="@+id/company"
-            android:textSize="20sp"
-            app:font="@string/font_roboto_regular"
-            android:textStyle="bold"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            <app.com.cvjuanresume.juansandoval.cvjuanresume.utils.CustomizedTextView
+                android:id="@+id/yearcompany"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:font="@string/font_roboto_regular" />
 
-        <app.com.cvjuanresume.juansandoval.cvjuanresume.utils.CustomizedTextView
-            android:id="@+id/experienceinfo"
-            android:textSize="16sp"
-            app:font="@string/font_roboto_light"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            <app.com.cvjuanresume.juansandoval.cvjuanresume.utils.CustomizedTextView
+                android:id="@+id/company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:font="@string/font_roboto_regular" />
+
+            <app.com.cvjuanresume.juansandoval.cvjuanresume.utils.CustomizedTextView
+                android:id="@+id/experienceinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                app:font="@string/font_roboto_light" />
+
+        </LinearLayout>
 
     </LinearLayout>
 

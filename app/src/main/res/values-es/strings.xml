@@ -122,4 +122,19 @@
     <string name="linkedin_media">Linkedin</string>
     <string name="youtube_media">Youtube</string>
 
+    <string name="title_company1">Webmaster</string>
+    <string name="company1">Cobiscorp</string>
+    <string name="year_company1">2013-2014</string>
+    <string name="content_company1">En Cobiscorp, serví en el área de capital humano. Fui el responsable de administrar la plataforma de e-learning virtual de la empresa y también diseñar y crear contenidos multimedia para varios entrenamientos que se dictan allí.</string>
+
+    <string name="title_company2">Android Jr. Developer</string>
+    <string name="company2">Accenture</string>
+    <string name="year_company2">2014-2016</string>
+    <string name="content_company2">En Accenture realicé diferentes tareas para diferentes proyectos: El más grande en el que participé, fue en la creación de aplicaciones de banca móvil para tres de los cuatro bancos GRUPO AVAL. También participe en los desarrollos para el consumo de servicios transacciónales bancarios en los siguientes Frameworks: KONY y Android Studio.</string>
+
+    <string name="title_company3">Mobile Lead Developer</string>
+    <string name="company3">IATAI Enterprises</string>
+    <string name="year_company3">2016-Current</string>
+    <string name="content_company3">Aquí en IATAI trabajo con un equipo de dos desarrolladores Android Jr y como arquitecto de la solución. La empresa requiere que los proyectos estén trabajando bajo metodologías Ágiles: SCRUM. Así que cada día tengo una reunión de productos con el líder del equipo de móviles en EE.UU. Participo ampliamente en los desarrollos móviles para los diversos clientes de la compañía.</string>
+
 </resources>

@@ -7,6 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.List;
 
 import app.com.cvjuanresume.juansandoval.cvjuanresume.R;
@@ -52,12 +54,11 @@ public class ExperienceAdapter extends RecyclerView.Adapter<ExperienceAdapter.My
 
     @Override
     public void onBindViewHolder(ExperienceAdapter.MyViewHolder holder, int position) {
-        Experience experience = experienceList.get(position);
-        holder.title_company.setText(experience.getTitle_company());
-        holder.year_company.setText(experience.getYear_Company());
-        holder.company.setText(experience.getCompany());
-        holder.contentinfo_company.setText(experience.getContentinfo_company());
-        //Picasso.with(context).load(experienceList.get(position).getImage_company()).resize(240,120).into(holder.image_company);
+        holder.title_company.setText(experienceList.get(position).getTitle_company());
+        holder.year_company.setText(experienceList.get(position).getYear_Company());
+        holder.company.setText(experienceList.get(position).getCompany());
+        holder.contentinfo_company.setText(experienceList.get(position).getContentinfo_company());
+        Picasso.with(context).load(experienceList.get(position).getImage_company()).resize(250,110).into(holder.image_company);
     }
 
     @Override
