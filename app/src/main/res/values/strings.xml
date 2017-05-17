@@ -134,5 +134,7 @@
     <string name="year_company3">2016-Current</string>
     <string name="content_company3">Here at IATAI i work with a team of two Android Jr Developers and as Architect of the Solution. The company requires that projects are working under Agile methodologies: SCRUM. So i daily have a product meeting with the Team Lead of mobile in USA.</string>
 
+    <string name="sending_mail">Sending Mail...</string>
+    <string name="mail_sent">Message sent</string>
 
 </resources>

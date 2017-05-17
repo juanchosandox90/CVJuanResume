@@ -14,6 +14,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import java.util.Properties;
+
 import javax.mail.Authenticator;
 import javax.mail.Message;
 import javax.mail.MessagingException;
@@ -24,6 +25,7 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
 import app.com.cvjuanresume.juansandoval.cvjuanresume.R;
+import app.com.cvjuanresume.juansandoval.cvjuanresume.utils.MyToast;
 
 /**
  * Created by jsandoval on 19/04/17.
@@ -91,7 +93,7 @@ public class ContactMeFragment extends Fragment implements View.OnClickListener 
             }
         });
 
-        pdialog = ProgressDialog.show(context, "", "Sending Mail...", true);
+        pdialog = ProgressDialog.show(context, "",getString(R.string.sending_mail), true);
 
         RetreiveFeedTask task = new RetreiveFeedTask();
         task.execute();
@@ -123,7 +125,7 @@ public class ContactMeFragment extends Fragment implements View.OnClickListener 
             reciep.setText("");
             msg.setText("");
             sub.setText("");
-            Toast.makeText(context, "Message sent", Toast.LENGTH_LONG).show();
+            MyToast.makeText(context, getString(R.string.mail_sent), Toast.LENGTH_LONG).show();
         }
     }
 }

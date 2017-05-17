@@ -137,4 +137,7 @@
     <string name="year_company3">2016-Current</string>
     <string name="content_company3">Aquí en IATAI trabajo con un equipo de dos desarrolladores Android Jr y como arquitecto de la solución. La empresa requiere que los proyectos estén trabajando bajo metodologías Ágiles: SCRUM. Así que cada día tengo una reunión de productos con el líder del equipo de móviles en EE.UU. Participo ampliamente en los desarrollos móviles para los diversos clientes de la compañía.</string>
 
+    <string name="sending_mail">Enviando correo...</string>
+    <string name="mail_sent">Mensaje enviado!</string>
+
 </resources>
