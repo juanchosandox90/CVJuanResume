@@ -1,32 +1,76 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".fragments.AboutMeFragment">
 
 
-    <app.com.cvjuanresume.juansandoval.cvjuanresume.utils.CustomizedTextView
-        android:id="@+id/label"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="50dp"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        app:font="@string/font_roboto_regular"
-        android:textSize="45sp"
-        android:text="@string/fragment_title_contactme"
-        android:textStyle="bold"/>
+        android:layout_alignParentStart="true">
 
-    <!--    <TextView
-            android:layout_below="@id/label"
-            android:layout_centerInParent="true"
+        <app.com.cvjuanresume.juansandoval.cvjuanresume.utils.CustomizedTextView
+            android:id="@+id/label"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:textSize="12dp"
-            android:layout_marginTop="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="50dp"
             android:gravity="center_horizontal"
-            android:text="Edit fragment_home.xml to change the appearance" />-->
+            android:text="@string/fragment_title_contactme"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            app:font="@string/font_roboto_regular" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginTop="20dp"
+                android:hint="Enter gmail-id" />
+
+            <EditText
+                android:id="@+id/et_sub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginTop="20dp"
+                android:hint="Enter Subject" />
+
+            <EditText
+                android:id="@+id/et_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginTop="20dp"
+                android:hint="Enter Message text"
+                android:inputType="textPostalAddress" />
+
+            <Button
+                android:id="@+id/btnSend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:background="@color/btn_login_bg"
+                android:text="SEND"
+                android:textColor="@color/colorPrimaryDark" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </RelativeLayout>
