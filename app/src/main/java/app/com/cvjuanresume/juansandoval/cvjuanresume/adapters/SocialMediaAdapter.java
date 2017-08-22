@@ -14,16 +14,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.linkedin.platform.DeepLinkHelper;
-import com.linkedin.platform.errors.LIDeepLinkError;
-import com.linkedin.platform.listeners.DeepLinkListener;
 
 import java.util.List;
 
 import app.com.cvjuanresume.juansandoval.cvjuanresume.R;
 import app.com.cvjuanresume.juansandoval.cvjuanresume.models.SocialMedia;
+import app.com.cvjuanresume.juansandoval.cvjuanresume.utils.MyToast;
 
 /**
  * Created by jsandoval on 8/05/17.
@@ -103,7 +102,7 @@ public class SocialMediaAdapter extends RecyclerView.Adapter<SocialMediaAdapter.
                     mContext.startActivity(facebookIntent);
                     return true;
                 case R.id.action_add_linkedin:
-                    getLinkedinAccount(mContext);
+                    getLinkedinAccount();
                     return true;
                 case R.id.action_add_youtube:
                     getYoutubeChannel();
@@ -136,22 +135,9 @@ public class SocialMediaAdapter extends RecyclerView.Adapter<SocialMediaAdapter.
         }
     }
 
-    public String getLinkedinAccount(Context context){
-        String targetID = "juan-sandoval-a33955a5";
-        DeepLinkHelper deepLinkHelper = DeepLinkHelper.getInstance();
-        deepLinkHelper.openOtherProfile(context, targetID, new DeepLinkListener() {
-            @Override
-            public void onDeepLinkSuccess() {
-                Intent LinkedinIntent = new Intent(Intent.ACTION_VIEW);
-                mContext.startActivity(LinkedinIntent);
-            }
+    public void getLinkedinAccount (){
 
-            @Override
-            public void onDeepLinkError(LIDeepLinkError error) {
-
-            }
-        });
-        return targetID;
+        MyToast.makeText(mContext,mContext.getString(R.string.linkedin_fix) ,Toast.LENGTH_LONG).show();
     }
 
     public void getYoutubeChannel(){

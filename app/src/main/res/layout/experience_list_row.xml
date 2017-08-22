@@ -28,7 +28,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="3"
                 android:textColor="@color/colorPrimary"
-                android:textSize="26sp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 app:font="@string/font_roboto_regular" />
 
@@ -49,7 +49,7 @@
                 android:id="@+id/yearcompany"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:textStyle="bold"
                 app:font="@string/font_roboto_regular" />
 
@@ -57,7 +57,7 @@
                 android:id="@+id/company"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
+                android:textSize="14sp"
                 android:textStyle="bold"
                 app:font="@string/font_roboto_regular" />
 
@@ -65,7 +65,7 @@
                 android:id="@+id/experienceinfo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
+                android:textSize="14sp"
                 app:font="@string/font_roboto_light" />
 
         </LinearLayout>

@@ -11,7 +11,6 @@
     <string name="nav_item_aboutme">Acerca de Mi</string>
     <string name="nav_item_education">Educación</string>
     <string name="nav_item_experience">Experiencia</string>
-    <string name="nav_item_achievements">Logros</string>
     <string name="nav_item_skills">Habilidades</string>
     <string name="nav_item_socialmedia">Social Media</string>
     <string name="nav_item_contacme">Contacto</string>
@@ -19,7 +18,6 @@
     <string name="fragment_title_aboutme">ACERCA DE MI</string>
     <string name="fragment_title_education">EDUCACIÓN</string>
     <string name="fragment_title_experience">EXPERIENCIA</string>
-    <string name="fragment_title_achievements">LOGROS</string>
     <string name="fragment_title_skills">HABILIDADES</string>
     <string name="fragment_title_socialmedia">SOCIAL MEDIA</string>
     <string name="fragment_title_contactme">CONTACTO</string>
@@ -36,7 +34,6 @@
         <item>@string/nav_item_aboutme</item>
         <item>@string/nav_item_education</item>
         <item>@string/nav_item_experience</item>
-        <item>@string/nav_item_achievements</item>
         <item>@string/nav_item_skills</item>
         <item>@string/nav_item_socialmedia</item>
         <item>@string/nav_item_contacme</item>
@@ -45,7 +42,6 @@
     <string name="title_experience">Experiencia</string>
     <string name="title_education">Educación</string>
     <string name="title_aboutme">Acerca de Mi</string>
-    <string name="title_achievements">Logros</string>
     <string name="title_skills">Habilidades</string>
     <string name="title_socialmedia">Social Media</string>
     <string name="title_contactme">Contacto</string>
@@ -139,5 +135,14 @@
 
     <string name="sending_mail">Enviando correo...</string>
     <string name="mail_sent">Mensaje enviado!</string>
+
+    <!--CONTENT SOCIAL MEDIA-->
+    <string name="linkedin_fix">Estamos trabajando para que disfrutes de esta opción pronto!</string>
+
+    <!--CONTENT CONTAC ME-->
+    <string name="email_hint">Ingresa tu correo electrónico</string>
+    <string name="subjectl_hint">Ingresa el asunto</string>
+    <string name="message_hint">Escribe tu mensaje</string>
+    <string name="send_button">Enviar</string>
 
 </resources>

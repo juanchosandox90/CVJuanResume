@@ -17,7 +17,6 @@ import android.view.View;
 import java.util.HashMap;
 
 import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.AboutMeFragment;
-import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.AchievementsFragment;
 import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.ContactMeFragment;
 import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.EducationFragment;
 import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.ExperienceFragment;
@@ -141,18 +140,14 @@ public class MainActivity extends ActionBarActivity implements FragmentDrawer.Fr
                 title = getString(R.string.title_experience);
                 break;
             case 3:
-                fragment = new AchievementsFragment();
-                title = getString(R.string.title_achievements);
-                break;
-            case 4:
                 fragment = new SkillsFragment();
                 title = getString(R.string.title_skills);
                 break;
-            case 5:
+            case 4:
                 fragment = new SocialMediaFragment();
                 title = getString(R.string.title_socialmedia);
                 break;
-            case 6:
+            case 5:
                 fragment = new ContactMeFragment();
                 title = getString(R.string.title_contactme);
                 break;

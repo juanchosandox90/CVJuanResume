@@ -32,7 +32,7 @@ public class ExperienceFragment extends Fragment {
 
     private final String android_image_urls[] = {
             "https://www.ekosnegocios.com/negocios/EQUIDNA/fotos/f1/862.jpg",
-            "https://www.underconsideration.com/brandnew/archives/accenture_logo.png",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Accenture.svg/2000px-Accenture.svg.png",
             "https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAT4AAAAJDYxY2YxMDhkLWViNzktNDA2YS04ZTFmLWY1ZTI4YjRjMWE0Yw.png"
     };
 

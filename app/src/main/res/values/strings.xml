@@ -36,7 +36,6 @@
         <item>@string/nav_item_aboutme</item>
         <item>@string/nav_item_education</item>
         <item>@string/nav_item_experience</item>
-        <item>@string/nav_item_achievements</item>
         <item>@string/nav_item_skills</item>
         <item>@string/nav_item_socialmedia</item>
         <item>@string/nav_item_contacme</item>
@@ -45,7 +44,6 @@
     <string name="title_experience">Experience</string>
     <string name="title_education">Education</string>
     <string name="title_aboutme">About Me</string>
-    <string name="title_achievements">Achievements</string>
     <string name="title_skills">Skills</string>
     <string name="title_socialmedia">Social Media</string>
     <string name="title_contactme">Contact Me</string>
@@ -136,5 +134,14 @@
 
     <string name="sending_mail">Sending Mail...</string>
     <string name="mail_sent">Message sent</string>
+
+    <!--CONTENT SOCIAL MEDIA-->
+    <string name="linkedin_fix">We are working on this feature. You will enjoy it soon!</string>
+
+    <!--CONTENT SOCIAL MEDIA-->
+    <string name="email_hint">Enter your email</string>
+    <string name="subjectl_hint">Enter subject</string>
+    <string name="message_hint">Type your message</string>
+    <string name="send_button">Send</string>
 
 </resources>
