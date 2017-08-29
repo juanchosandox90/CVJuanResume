@@ -1,21 +1,22 @@
 package app.com.cvjuanresume.juansandoval.cvjuanresume;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import java.util.HashMap;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
+import app.com.cvjuanresume.juansandoval.cvjuanresume.firebaseauth.LoginActivityFire;
 import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.AboutMeFragment;
 import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.ContactMeFragment;
 import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.EducationFragment;
@@ -23,39 +24,40 @@ import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.ExperienceFragme
 import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.FragmentDrawer;
 import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.SkillsFragment;
 import app.com.cvjuanresume.juansandoval.cvjuanresume.fragments.SocialMediaFragment;
-import app.com.cvjuanresume.juansandoval.cvjuanresume.utils.SQLiteHandler;
-import app.com.cvjuanresume.juansandoval.cvjuanresume.utils.SessionManager;
 
 /**
  * Created by jsandoval on 18/04/17.
  */
 
-public class MainActivity extends ActionBarActivity implements FragmentDrawer.FragmentDrawerListener {
+public class MainActivity extends AppCompatActivity implements FragmentDrawer.FragmentDrawerListener {
 
-    private static String TAG = MainActivity.class.getSimpleName();
 
     private Toolbar mToolbar;
     private FragmentDrawer drawerFragment;
-    private SQLiteHandler db;
-    private SessionManager session;
+    private FirebaseAuth.AuthStateListener authListener;
+    private FirebaseAuth auth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // SqLite database handler
-        db = new SQLiteHandler(getApplicationContext());
-
-        // session manager
-        session = new SessionManager(getApplicationContext());
-        HashMap<String, String> user = db.getUserDetails();
-
-        if (!session.isLoggedIn()) {
-            logoutUser();
-        }
-
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
+
+        auth = FirebaseAuth.getInstance();
+
+        authListener = new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                FirebaseUser user = firebaseAuth.getCurrentUser();
+                if (user == null) {
+                    // user auth state is changed - user is null
+                    // launch login activity
+                    startActivity(new Intent(MainActivity.this, LoginActivityFire.class));
+                    finish();
+                }
+            }
+        };
 
         setSupportActionBar(mToolbar);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
@@ -68,30 +70,6 @@ public class MainActivity extends ActionBarActivity implements FragmentDrawer.Fr
         // display the first navigation drawer view on app launch
         displayView(0);
 
-        Thread t = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                //  Initialize SharedPreferences
-                SharedPreferences getPrefs = PreferenceManager
-                        .getDefaultSharedPreferences(getBaseContext());
-                //  Create a new boolean and preference and set it to true
-                boolean isFirstStart = getPrefs.getBoolean("firstStart", true);
-                //  If the activity has never started before...
-                if (isFirstStart) {
-                    //  Launch app intro
-                    Intent i = new Intent(MainActivity.this, WalkThroughActivity.class);
-                    startActivity(i);
-                    //  Make a new preferences editor
-                    SharedPreferences.Editor e = getPrefs.edit();
-                    //  Edit preference to make it false because we don't want this to run again
-                    e.putBoolean("firstStart", false);
-                    //  Apply changes
-                    e.apply();
-                }
-            }
-        });
-        // Start the thread
-        t.start();
     }
 
 
@@ -111,7 +89,7 @@ public class MainActivity extends ActionBarActivity implements FragmentDrawer.Fr
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            logoutUser();
+            signOut();
             return true;
         }
 
@@ -166,12 +144,29 @@ public class MainActivity extends ActionBarActivity implements FragmentDrawer.Fr
         }
     }
 
-    public void logoutUser() {
-        session.setLogin(false);
-        db.deleteUsers();
-        Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-        startActivity(intent);
-        finish();
-
+    //sign out method
+    public void signOut() {
+        auth.signOut();
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+            mToolbar.setVisibility(View.VISIBLE);
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        auth.addAuthStateListener(authListener);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        if (authListener != null) {
+            auth.removeAuthStateListener(authListener);
+        }
+    }
+
 }

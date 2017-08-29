@@ -53,13 +53,7 @@ public class CustomizedTextView extends TextView {
     * */
 
     private Typeface getFont() {
-
-        AssetManager manager = context.getAssets();
-
-        String fontName = typedArray.getString(R.styleable.CustomizedTextView_font);
-        typedArray.recycle();
-
-        return Typeface.createFromAsset(manager, fontName);
+        return null;
     }
 
 }
