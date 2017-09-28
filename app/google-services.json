@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "231651389259",
+    "firebase_url": "https://cvjuanresumen.firebaseio.com",
+    "project_id": "cvjuanresumen",
+    "storage_bucket": "cvjuanresumen.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231651389259:android:86795c0d015ca307",
+        "android_client_info": {
+          "package_name": "app.com.cvjuanresume.juansandoval.cvjuanresume"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "231651389259-kahpfmlj8eu0r54f9f4nsca8gu4lb3b2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxxG0bQfQ5DBXXL4hXQLQVfLvJPG8YSsg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

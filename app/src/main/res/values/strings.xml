@@ -1,3 +1,181 @@
 <resources>
-    <string name="app_name">CVJuanResume</string>
+    <string name="app_name">Best Resume CV</string>
+    <string name="action_settings">Logout</string>
+    <string name="action_search">Search</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="accept">Accept</string>
+    <string name="skip_walk">Skip</string>
+    <string name="done_walk">Start</string>
+
+    <string name="nav_item_aboutme">About Me</string>
+    <string name="nav_item_education">Education</string>
+    <string name="nav_item_experience">Experience</string>
+    <string name="nav_item_achievements">Achievements</string>
+    <string name="nav_item_skills">Skills</string>
+    <string name="nav_item_socialmedia">Social Media</string>
+    <string name="nav_item_contacme">Contact Me</string>
+
+    <string name="fragment_title_aboutme">ABOUT ME</string>
+    <string name="fragment_title_education">EDUCATION</string>
+    <string name="fragment_title_experience">EXPERIENCE</string>
+    <string name="fragment_title_achievements">ACHIEVEMENTS</string>
+    <string name="fragment_title_skills">SKILLS</string>
+    <string name="fragment_title_socialmedia">SOCIAL MEDIA</string>
+    <string name="fragment_title_contactme">CONTACT ME</string>
+
+    <string name="title_walk_01">Roboto Regular</string>
+    <string name="walk_01">Robot Light</string>
+    <string name="txtWalktroughFooter">Rotobo Thin</string>
+    <string name="font_roboto_thin">fonts/Roboto-Thin.ttf</string>
+    <string name="font_roboto_light">fonts/Roboto-Light.ttf</string>
+    <string name="font_roboto_regular">fonts/Roboto-Regular.ttf</string>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_aboutme</item>
+        <item>@string/nav_item_education</item>
+        <item>@string/nav_item_experience</item>
+        <item>@string/nav_item_skills</item>
+        <item>@string/nav_item_socialmedia</item>
+        <item>@string/nav_item_contacme</item>
+    </string-array>
+
+    <string name="title_experience">Experience</string>
+    <string name="title_education">Education</string>
+    <string name="title_aboutme">About Me</string>
+    <string name="title_skills">Skills</string>
+    <string name="title_socialmedia">Social Media</string>
+    <string name="title_contactme">Contact Me</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="succesfull_register">User successfully registered. Try login now!</string>
+    <string name="registering">Registering ... </string>
+    <string name="register_details">Please enter your details!</string>
+    <string name="login_details">Please enter the credentials!</string>
+    <string name="loggin">Loggin in ... </string>
+
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Fullname</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registred! Login Me.</string>
+
+    <string name="title_slide1">Welcome a CVResumen</string>
+    <string name="content_slide1">In this App you will find some information about my profesional life</string>
+    <string name="copyright_slide1">Copyright &#169; Juan Sandoval</string>
+
+    <string name="title_slide2">The first thing is to register</string>
+    <string name="content_slide2">In order to access my professional information, you must register first.</string>
+    <string name="copyright_slide2">Copyright &#169; Juan Sandoval</string>
+
+    <string name="title_slide3">Login in the App</string>
+    <string name="content_slide3">Login in the app and get access to all my profesional information</string>
+    <string name="copyright_slide3">Copyright &#169; Juan Sandoval</string>
+
+    <string name="title_slide4">Walkthrough the app</string>
+    <string name="content_slide4">You will able to navigate through my profesional information</string>
+    <string name="copyright_slide4">Copyright &#169; Juan Sandoval</string>
+
+    <!--CONTENT ABOUT ME-->
+    <string name="aboutme_content0">My name is Juan Camilo Sandoval Devia. Im a Multimedia Engineer</string>
+    <string name="aboutme_content">I think I have a great capacity for work, integration, flexibility dynamism and ability to cope with challenging situations and overcome.</string>
+    <string name="aboutme_content2">I love studying and I am self-taught by nature; I put special attention to details. Quickly I learn new ideas and concepts and I like to develop creative and innovative solutions.</string>
+
+    <!--CONTENT EDUCATION-->
+    <string name="title_1">Multimedia Engineer</string>
+    <string name="year_1">2008-2013</string>
+    <string name="college_1">Universidad Militar Nueva Granada</string>
+    <string name="contentinfo_1">Multimedia Engineering degree with emphasis on development and programming of mobile applications and project management.</string>
+
+    <string name="title_2">Virtual Learning Environments</string>
+    <string name="year_2">2013-2014</string>
+    <string name="college_2">Universidad Militar Nueva Granada</string>
+    <string name="contentinfo_2">Design of virtual learning environments. Development of frameworks for learning platforms and content</string>
+
+    <string name="title_3">Management Projects Specialization</string>
+    <string name="year_3">2016-Current</string>
+    <string name="college_3">EAN University</string>
+    <string name="contentinfo_3">Project Management specialization</string>
+
+    <string name="skill_java">JAVA</string>
+    <string name="skill_android">ANDROID STUDIO</string>
+    <string name="skill_javascript">JAVASCRIPT</string>
+    <string name="HTLMCSS">HTML/CSS</string>
+    <string name="based_on">Based on %100</string>
+
+    <string name="goto_social_facebook">Go to Facebook Page</string>
+    <string name="goto_social_linkedin">Go to Linkedin Page</string>
+    <string name="goto_social_youtube">Go to Youtube Page</string>
+
+    <string name="facebook_media">Facebook</string>
+    <string name="linkedin_media">Linkedin</string>
+    <string name="youtube_media">Youtube</string>
+
+    <string name="title_company1">Webmaster</string>
+    <string name="company1">Cobiscorp</string>
+    <string name="year_company1">2013-2014</string>
+    <string name="content_company1">At Cobiscorp, I served in the area of human capital. I was responsible for managing the virtual e-learning platform of the company and likewise design and create multimedia content for various trainings that are dictated there.</string>
+
+    <string name="title_company2">Android Jr. Developer</string>
+    <string name="company2">Accenture</string>
+    <string name="year_company2">2014-2016</string>
+    <string name="content_company2">At Accenture I did different tasks for different projects: The largest in which I participated, was in the creation of mobile banking application for three of the four banks GRUPO AVAL. Also made light developments for consumption back in transactional banking services issues under the framework: KONY and Native Android Studio.</string>
+
+    <string name="title_company3">Mobile Lead Developer</string>
+    <string name="company3">IATAI Enterprises</string>
+    <string name="year_company3">2016-Current</string>
+    <string name="content_company3">Here at IATAI i work with a team of two Android Jr Developers and as Architect of the Solution. The company requires that projects are working under Agile methodologies: SCRUM. So i daily have a product meeting with the Team Lead of mobile in USA.</string>
+
+    <string name="sending_mail">Sending Mail...</string>
+    <string name="mail_sent">Message sent</string>
+
+    <!--CONTENT SOCIAL MEDIA-->
+    <string name="linkedin_fix">We are working on this feature. You will enjoy it soon!</string>
+
+    <!--CONTENT SOCIAL MEDIA-->
+    <string name="email_hint">Enter your email</string>
+    <string name="subjectl_hint">Enter subject</string>
+    <string name="message_hint">Type your message</string>
+    <string name="send_button">Send</string>
+
+    <!-- FIREBASE IMPLEMENTATION -->
+    <string name="action_sign_in_short">Register</string>
+    <string name="email">Email</string>
+    <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
+    <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
+    <string name="change_email">Change Email</string>
+    <string name="change_password">Change Password</string>
+    <string name="send_password_reset_email">Send Password reset email</string>
+    <string name="remove_user">Remove user</string>
+    <string name="new_pass">New Password</string>
+    <string name="title_activity_profile">Firebase</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="hint_email_fire">Email</string>
+    <string name="hint_password_fire">Password</string>
+    <string name="hint_name_fire">Fullname</string>
+    <string name="btn_login_fire">LOGIN</string>
+    <string name="btn_link_to_register_fire">Not a member? Get registered in Firebase now!</string>
+    <string name="btn_link_to_login_fire">Already registered. Login Me!</string>
+    <string name="title_activity_reset_password">ResetPasswordActivity</string>
+    <string name="btn_forgot_password">Forgot your password?</string>
+    <string name="btn_reset_password">Reset Password</string>
+    <string name="btn_back"><![CDATA[<< Back]]></string>
+    <string name="hint_new_email">New Email</string>
+    <string name="btn_change">Change</string>
+    <string name="btn_send">Send</string>
+    <string name="btn_remove">Remove</string>
+    <string name="btn_sign_out">Sign Out</string>
+    <string name="lbl_forgot_password">Forgot password?</string>
+    <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
+    <string name="enter_email">Enter email address!</string>
+    <string name="enter_password">Enter password!</string>
+    <string name="link_sent">We have sent you instructions to reset your password!</string>
+    <string name="link_failed">Failed to send reset email!</string>
+
 </resources>
