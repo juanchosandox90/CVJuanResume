@@ -16,6 +16,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.iid.FirebaseInstanceId;
 
 import app.com.cvjuanresume.juansandoval.cvjuanresume.MainActivity;
 import app.com.cvjuanresume.juansandoval.cvjuanresume.R;
@@ -37,6 +38,8 @@ public class LoginActivityFire extends AppCompatActivity {
 
         //Get Firebase auth instance
         auth = FirebaseAuth.getInstance();
+        //String token = FirebaseInstanceId.getInstance().getToken();
+        //Toast.makeText(getApplicationContext(), token, Toast.LENGTH_LONG).show();
 
         if (auth.getCurrentUser() != null) {
             startActivity(new Intent(LoginActivityFire.this, MainActivity.class));
