@@ -12,6 +12,8 @@ import java.util.List;
 
 import app.com.cvjuanresume.juansandoval.cvjuanresume.R;
 import app.com.cvjuanresume.juansandoval.cvjuanresume.models.NavDrawerItem;
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 /**
  * Created by jsandoval on 18/04/17.
@@ -54,11 +56,14 @@ public class NavigationDrawerAdapter extends RecyclerView.Adapter<NavigationDraw
     }
 
     class MyViewHolder extends RecyclerView.ViewHolder{
-        TextView title;
+        //TextView title;
+
+        @BindView(R.id.title) TextView title;
 
         public MyViewHolder(View itemView){
             super(itemView);
-            title = (TextView) itemView.findViewById(R.id.title);
+            ButterKnife.bind(this, itemView);
+           // title = (TextView) itemView.findViewById(R.id.title);
         }
     }
 }

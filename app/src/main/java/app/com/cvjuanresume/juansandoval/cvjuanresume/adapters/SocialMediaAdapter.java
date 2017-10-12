@@ -23,6 +23,8 @@ import java.util.List;
 import app.com.cvjuanresume.juansandoval.cvjuanresume.R;
 import app.com.cvjuanresume.juansandoval.cvjuanresume.models.SocialMedia;
 import app.com.cvjuanresume.juansandoval.cvjuanresume.utils.MyToast;
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 /**
  * Created by jsandoval on 8/05/17.
@@ -36,14 +38,18 @@ public class SocialMediaAdapter extends RecyclerView.Adapter<SocialMediaAdapter.
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
-        public TextView title;
-        public ImageView thumbnail, overflow;
+       // public TextView title;
+        //public ImageView thumbnail, overflow;
+        @BindView(R.id.title_social) TextView title;
+        @BindView(R.id.thumbnail) ImageView thumbnail;
+        @BindView(R.id.overflow) ImageView overflow;
 
         public MyViewHolder(View view) {
             super(view);
-            title = (TextView) view.findViewById(R.id.title_social);
-            thumbnail = (ImageView) view.findViewById(R.id.thumbnail);
-            overflow = (ImageView) view.findViewById(R.id.overflow);
+            ButterKnife.bind(this, view);
+          //  title = (TextView) view.findViewById(R.id.title_social);
+           // thumbnail = (ImageView) view.findViewById(R.id.thumbnail);
+           // overflow = (ImageView) view.findViewById(R.id.overflow);
         }
 
     }

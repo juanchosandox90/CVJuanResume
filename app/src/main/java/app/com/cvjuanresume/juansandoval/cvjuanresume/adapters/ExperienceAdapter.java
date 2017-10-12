@@ -14,6 +14,8 @@ import java.util.List;
 import app.com.cvjuanresume.juansandoval.cvjuanresume.R;
 import app.com.cvjuanresume.juansandoval.cvjuanresume.models.Experience;
 import app.com.cvjuanresume.juansandoval.cvjuanresume.utils.CustomizedTextView;
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 /**
  * Created by jsandoval on 12/05/17.
@@ -24,17 +26,20 @@ public class ExperienceAdapter extends RecyclerView.Adapter<ExperienceAdapter.My
     private List<Experience> experienceList;
     private Context context;
 
-    public class MyViewHolder extends RecyclerView.ViewHolder {
-        public CustomizedTextView title_company, year_company, company, contentinfo_company;
-        public ImageView image_company;
+    public static class MyViewHolder extends RecyclerView.ViewHolder {
+
+        //public CustomizedTextView title_company, year_company, company, contentinfo_company;
+        // ImageView image_company;
+
+        @BindView(R.id.title_company) CustomizedTextView title_company;
+        @BindView(R.id.yearcompany) CustomizedTextView year_company;
+        @BindView(R.id.company) CustomizedTextView company;
+        @BindView(R.id.experienceinfo) CustomizedTextView contentinfo_company;
+        @BindView(R.id.image_company) ImageView image_company;
 
         public MyViewHolder(View view) {
             super(view);
-            title_company = (CustomizedTextView) view.findViewById(R.id.title_company);
-            year_company = (CustomizedTextView) view.findViewById(R.id.yearcompany);
-            company = (CustomizedTextView) view.findViewById(R.id.company);
-            contentinfo_company = (CustomizedTextView) view.findViewById(R.id.experienceinfo);
-            image_company = (ImageView) view.findViewById(R.id.image_company);
+            ButterKnife.bind(this, view);
         }
     }
 

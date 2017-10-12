@@ -13,6 +13,7 @@ buildscript {
 
 
 apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
 
 
 
@@ -47,6 +48,8 @@ dependencies {
     compile 'com.android.support:appcompat-v7:26.0.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.android.support:recyclerview-v7:26.0.1'
+    compile 'com.jakewharton:butterknife:8.8.1'
+    apt 'com.jakewharton:butterknife-compiler:8.8.1'
     compile 'com.android.support:support-v4:26.0.1'
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'com.github.PhilJay:MPAndroidChart:v3.0.2'

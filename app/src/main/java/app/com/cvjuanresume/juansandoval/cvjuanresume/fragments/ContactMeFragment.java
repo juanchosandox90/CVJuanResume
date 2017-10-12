@@ -26,6 +26,8 @@ import javax.mail.internet.MimeMessage;
 
 import app.com.cvjuanresume.juansandoval.cvjuanresume.R;
 import app.com.cvjuanresume.juansandoval.cvjuanresume.utils.MyToast;
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 /**
  * Created by jsandoval on 19/04/17.
@@ -36,8 +38,12 @@ public class ContactMeFragment extends Fragment implements View.OnClickListener 
     Session session = null;
     ProgressDialog pdialog = null;
     Context context = null;
-    EditText reciep, sub, msg;
     String rec, subject, textMessage;
+
+    @BindView(R.id.btnSend)Button login;
+    @BindView(R.id.et_to)EditText reciep;
+    @BindView(R.id.et_sub)EditText sub;
+    @BindView(R.id.et_text)EditText msg;
 
     public ContactMeFragment(){
 
@@ -54,11 +60,7 @@ public class ContactMeFragment extends Fragment implements View.OnClickListener 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_contactme, container, false);
-        Button login = (Button) rootView.findViewById(R.id.btnSend);
-        reciep = (EditText) rootView.findViewById(R.id.et_to);
-        sub = (EditText) rootView.findViewById(R.id.et_sub);
-        msg = (EditText) rootView.findViewById(R.id.et_text);
-
+        ButterKnife.bind(this,rootView);
         login.setOnClickListener(this);
         // Inflate the layout for this fragment
         return rootView;
@@ -106,8 +108,8 @@ public class ContactMeFragment extends Fragment implements View.OnClickListener 
 
             try{
                 Message message = new MimeMessage(session);
-                message.setFrom(new InternetAddress("testfrom354@gmail.com"));
-                message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(rec));
+                message.setFrom(new InternetAddress(rec));
+                message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("cvresumenjuan@gmail.com"));
                 message.setSubject(subject);
                 message.setContent(textMessage, "text/html; charset=utf-8");
                 Transport.send(message);
