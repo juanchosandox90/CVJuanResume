@@ -28,9 +28,6 @@ public class ExperienceAdapter extends RecyclerView.Adapter<ExperienceAdapter.My
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 
-        //public CustomizedTextView title_company, year_company, company, contentinfo_company;
-        // ImageView image_company;
-
         @BindView(R.id.title_company) CustomizedTextView title_company;
         @BindView(R.id.yearcompany) CustomizedTextView year_company;
         @BindView(R.id.company) CustomizedTextView company;

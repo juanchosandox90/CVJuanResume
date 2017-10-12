@@ -25,8 +25,6 @@ public class EducationAdapter extends RecyclerView.Adapter<EducationAdapter.MyVi
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 
-        //public CustomizedTextView title_u, year, college, contentinfo;
-
         @BindView(R.id.title_u) CustomizedTextView title_u;
         @BindView(R.id.year) CustomizedTextView year;
         @BindView(R.id.college) CustomizedTextView college;

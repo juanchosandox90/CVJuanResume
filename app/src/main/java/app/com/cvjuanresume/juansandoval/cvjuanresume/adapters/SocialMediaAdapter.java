@@ -38,8 +38,6 @@ public class SocialMediaAdapter extends RecyclerView.Adapter<SocialMediaAdapter.
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
-       // public TextView title;
-        //public ImageView thumbnail, overflow;
         @BindView(R.id.title_social) TextView title;
         @BindView(R.id.thumbnail) ImageView thumbnail;
         @BindView(R.id.overflow) ImageView overflow;
@@ -47,9 +45,6 @@ public class SocialMediaAdapter extends RecyclerView.Adapter<SocialMediaAdapter.
         public MyViewHolder(View view) {
             super(view);
             ButterKnife.bind(this, view);
-          //  title = (TextView) view.findViewById(R.id.title_social);
-           // thumbnail = (ImageView) view.findViewById(R.id.thumbnail);
-           // overflow = (ImageView) view.findViewById(R.id.overflow);
         }
 
     }

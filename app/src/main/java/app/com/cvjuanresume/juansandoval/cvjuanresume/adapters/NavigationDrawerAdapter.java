@@ -56,7 +56,6 @@ public class NavigationDrawerAdapter extends RecyclerView.Adapter<NavigationDraw
     }
 
     class MyViewHolder extends RecyclerView.ViewHolder{
-        //TextView title;
 
         @BindView(R.id.title) TextView title;
 
