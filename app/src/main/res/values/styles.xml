@@ -1,4 +1,5 @@
 <resources>
+
     <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
 
     </style>
@@ -21,5 +22,10 @@
         <item name="android:shadowDy">2</item>
     </style>
 
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/style_color_primary</item>
+        <item name="colorPrimaryDark">@color/style_color_primary_dark</item>
+        <item name="colorAccent">@color/style_color_accent</item>
+    </style>
 
 </resources>
