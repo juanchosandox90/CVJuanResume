@@ -30,11 +30,6 @@ import butterknife.OnClick;
  */
 
 public class LoginActivityFire extends AppCompatActivity {
-
-    //private EditText inputEmail, inputPassword;
-    //private ProgressBar progressBar;
-    //private Button btnSignup, btnLogin, btnReset;
-
     /**
      *
      * ButterKnife Implementation
