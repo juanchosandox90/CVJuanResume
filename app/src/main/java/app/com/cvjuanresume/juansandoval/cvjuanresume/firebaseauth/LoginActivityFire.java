@@ -20,6 +20,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.iid.FirebaseInstanceId;
 
 import app.com.cvjuanresume.juansandoval.cvjuanresume.MainActivity;
+import app.com.cvjuanresume.juansandoval.cvjuanresume.MainTabActivity;
 import app.com.cvjuanresume.juansandoval.cvjuanresume.R;
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -82,7 +83,7 @@ public class LoginActivityFire extends AppCompatActivity {
                                 Toast.makeText(LoginActivityFire.this, getString(R.string.auth_failed), Toast.LENGTH_LONG).show();
                             }
                         } else {
-                            Intent intent = new Intent(LoginActivityFire.this, MainActivity.class);
+                            Intent intent = new Intent(LoginActivityFire.this, MainTabActivity.class);
                             startActivity(intent);
                             finish();
                         }
@@ -103,7 +104,7 @@ public class LoginActivityFire extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
 
         if (auth.getCurrentUser() != null) {
-            startActivity(new Intent(LoginActivityFire.this, MainActivity.class));
+            startActivity(new Intent(LoginActivityFire.this, MainTabActivity.class));
             finish();
         }
         // set the view now
